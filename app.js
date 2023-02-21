@@ -110,6 +110,9 @@ function drawRectangles() {
 		context.beginPath();
 		context.rect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
 		context.fillStyle = rectangle.color;
+		if (rectangle.color !== 'yellow') {
+			context.fillStyle = 'blue';
+		}
 		context.fill();
 		context.strokeStyle = '#000';
 		context.stroke();
